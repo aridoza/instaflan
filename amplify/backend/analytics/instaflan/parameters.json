@@ -1,0 +1,20 @@
+{
+    "appName": "instaflan",
+    "roleName": "pinpointLambdaRole6127ffe6",
+    "cloudWatchPolicyName": "cloudWatchPolicy6127ffe6",
+    "pinpointPolicyName": "pinpointPolicy6127ffe6",
+    "authPolicyName": "pinpoint_amplify_6127ffe6",
+    "unauthPolicyName": "pinpoint_amplify_6127ffe6",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
